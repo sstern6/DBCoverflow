@@ -4,10 +4,11 @@ This was a group project worked on using stackoverflow as a guide to creating a 
 
 Core Contributors:
 
-  -Thomas Voegeli
-  -Galen Cook
-  -Julia Graber
-  -Xander Peterson
-  -Kevin Kennis
-  -Joie Kennerson
-  -Gabriel Firmacion
+  1.Thomas Voegeli
+  2.Galen Cook
+  3.Julia Graber
+  4.Xander Peterson
+  5.Kevin Kennis
+  6.Joie Kennerson
+  7.Gabriel Firmacion
+  8.Scott Stern

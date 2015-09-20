@@ -1,0 +1,28 @@
+
+<div class="question-box" id="<%= @question.id %>">
+  <i class="fa fa-thumbs-up fa-3x question-vote"></i>
+  <h1 class="title"><%= @question.title %></h1>
+  <h4 class="topic">Topic: <%= @question.topic %></h4>
+  <h6 class="email">Posted By: <%= @question.user.username %></h6>
+  <p><%= @question.content %></p>
+</div>
+
+<div class="comments">
+  <ul class="comment-list">
+  <% @question.comments.each do |comment| %>
+  <li id="<%= comment.id %>"><span class="vote_count"><%= comment.votes.length %></span>&nbsp;&nbsp;<i class="fa fa-thumbs-up fa-2x"></i>&nbsp;&nbsp;<%= comment.user.username %>
+  <p class="comment-content"><%= comment.content %></p></li>
+  <% end %>
+  </ul>
+</div>
+
+<br><br>
+<form method="post" action="/comments" id="new_comment_form">
+  <fieldset>
+    <legend>&nbsp;&nbsp;Join the dicussion!&nbsp;&nbsp;</legend>
+    <input type="hidden" name="question_id" value="<%= @question.id %>">
+    <textarea rows="10" cols="50" id="editor" name="content" form="new_comment_form" placeholder="Please write a comment if you're logged in......"></textarea>
+    <input class="button-style" id="post-comment" type="submit" value="Post your comment!">
+  </fieldset>
+</form>
+

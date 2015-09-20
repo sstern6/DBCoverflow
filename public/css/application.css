@@ -1,0 +1,185 @@
+ul{
+  list-style-type: none;
+}
+
+.header {
+  position: static;
+  top: 10em;
+  /*margin-right: 25px;*/
+  /*margin-left: auto;*/
+  margin-top: 0.15em;
+  width: 100%;
+  border-bottom-style: solid;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  padding-left: 1em;
+}
+
+.header a {
+  font-size: 15px;
+  float: right;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  /*text-align: left;*/
+  /*left: -10px;*/
+  color: white;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: static;
+  bottom: 0em;
+  margin: auto;
+  margin-top: 5em;
+
+  border-bottom-style: solid;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer a {
+  color: white;
+}
+
+form {
+  text-align: center;
+  background-color: white;
+}
+
+.form-header {
+  text-align: center;
+  font-size: 1.5em;
+
+}
+
+.form-link {
+  text-align: center;
+  background-color: white;
+}
+
+* {
+  background-color: #F0F0F0;
+}
+
+.form-border {
+  border-style: solid;
+  border-color: #E0E0E0;
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.button-style {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+}
+
+header {
+  margin-top: 2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.question-box {
+
+  position: relative;
+  left: 20%;
+  max-width: 50%;
+}
+
+.question-vote {
+  margin-bottom: .5em;
+}
+
+.comments {
+  position: relative;
+  left: 25%;
+  max-width: 50%;
+}
+
+.title {
+  display: inline;
+}
+
+.timestamp {
+  font-size: .5em;
+}
+
+.topic {
+  margin-top: -10px;
+  font-size: .75em;
+}
+
+#new_comment_form {
+  max-width: 50%;
+  position: relative;
+  left: 25%;
+  background-color: #F0F0F0;
+}
+
+#new_comment_form textarea {
+  background-color: white;
+  left: 25%;
+}
+
+#new_comment_form #post-comment {
+  display: block;
+  margin: auto;
+  padding: 10px 15px;
+  background: #4479BA;
+  color: #FFF;
+}
+
+.comment-content {
+    width: 60%;
+    word-wrap: break-word;
+}
+
+.new-question-form {
+  border-style: solid;
+  border-color: #E0E0E0;
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#new_comment_form fieldset {
+  padding: 2em;
+}
+
+#new_comment_form textarea {
+  overflow: scroll;
+  height: 15em;
+}
+
+div.new-question-form {
+  padding: 2em;
+}
+
+.new-question-form textarea {
+  height: 30em;
+}
+
+.new-question-form input {
+  width: 100%;
+}
+
+
+

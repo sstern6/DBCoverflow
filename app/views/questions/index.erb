@@ -1,0 +1,14 @@
+<div class="question-box">
+<ul>
+<% @questions.each do |question| %>
+  <li>
+    <ul><h1 class="title"><a href="/questions/<%= question.id %>"><%= question.title %></a></h1> votes: <%= question.votes.count %> |
+  <span class="timestamp">Posted: <%= question.created_at.strftime("%B %-d %T") %></span>
+  <li class="topic"><h3>Topic: <%= question.topic %></h3></li>
+  <li class="email"><h6>Posted By: <%= question.user.email.split("@").first %></h6></li>
+  </ul></li>
+  <hr />
+<% end %>
+
+</ul>
+</div>

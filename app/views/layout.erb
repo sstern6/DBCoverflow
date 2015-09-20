@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+  <script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+  <script>tinymce.init({selector:'textarea'});</script>
+
+  <title>DBC Overflow</title>
+</head>
+<body>
+  <header>
+      <div class="header">DBC Overflow
+    <!-- Check this against login pages created -->
+    <% if session[:user_id] %>
+      <a href="/questions/new">Ask a Question</a>
+      <a href="/logout">Logout</a>
+      <a href="/questions">Home</a>
+    <% else %>
+      <a href="/users/new">Sign Up</a>
+      <a href="/login">Login</a>
+    <% end %>
+
+  </div></div>
+  </header>
+
+
+  <%= yield %>
+  <div class="footer">Important Legal Information!</div>
+</body>
+</html>

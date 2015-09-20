@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+<div class="header">DBC OVERFLOW</div><br>
+  <div class=form-header>Sign Up Now!</div>
+<br>
+<div class=form-border >
+<form method="POST" action="/users">
+  <input type="email" name="email" placeholder="email">
+  <br></br>
+  <input type="password" name="password" placeholder="password">
+  <br></br>
+  <input class="button-style" type="submit" value="Sign Up!">
+</form>
+<br>
+<div class=form-link><a href="/login">Already have an account?</a></div>
+</div>
+
+ <div class="footer"><a href="/questions">Back to DBC Overflow</a></div>
